@@ -18,15 +18,16 @@ const Routing: FC = () => {
       <Container>
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
-          <Route path="/allarena" component={AllArena}></Route>
-          <Route path="/allathlete" component={AllAthlete}></Route>
-          <Route path="/createarena" component={CreateArena}></Route>
-          <Route path="/createathlete" component={CreateAthlete}></Route>
-          <Route path="/editarena" component={EditArena}></Route>
-          <Route path="/editathlete" component={EditAthlete}></Route>
-          <Route path="/homepage" component={HomePage}></Route>
+          <Route path="/AllArena" component={AllArena}></Route>
+          <Route path="/AllAthlete" component={AllAthlete}></Route>
+          <Route path="/CreateArena" component={CreateArena}></Route>
+          <Route path="/CreateAthlete" component={CreateAthlete}></Route>
+          <Route path="/EditArena" component={EditArena}></Route>
+          <Route path="/EditAthlete" component={EditAthlete}></Route>
+          <Route path="/HomePage" component={HomePage}></Route>
         </Switch>
       </Container>
+
     </BrowserRouter>
   );
 };
