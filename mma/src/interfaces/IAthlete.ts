@@ -1,3 +1,5 @@
-export interface IAthlete {
-    
+export default interface AllAthlete {
+
+    name: string;
+
 }
