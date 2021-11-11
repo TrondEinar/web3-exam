@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/johann/Desktop/Webutvikling3/PGR305Api/MmaAthletesApi.csproj": {}
+    "/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/MmaAthletesApi.csproj": {}
   },
   "projects": {
-    "/Users/johann/Desktop/Webutvikling3/PGR305Api/MmaAthletesApi.csproj": {
+    "/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/MmaAthletesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/johann/Desktop/Webutvikling3/PGR305Api/MmaAthletesApi.csproj",
+        "projectUniqueName": "/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/MmaAthletesApi.csproj",
         "projectName": "MmaAthletesApi",
-        "projectPath": "/Users/johann/Desktop/Webutvikling3/PGR305Api/MmaAthletesApi.csproj",
+        "projectPath": "/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/MmaAthletesApi.csproj",
         "packagesPath": "/Users/johann/.nuget/packages/",
-        "outputPath": "/Users/johann/Desktop/Webutvikling3/PGR305Api/obj/",
+        "outputPath": "/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/johann/.nuget/NuGet/NuGet.Config"
