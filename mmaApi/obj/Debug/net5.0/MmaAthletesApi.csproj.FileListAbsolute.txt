@@ -104,7 +104,6 @@
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/staticwebassets/MmaAthletesApi.StaticWebAssets.xml
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/scopedcss/bundle/MmaAthletesApi.styles.css
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/MmaAthletesApi.RazorTargetAssemblyInfo.cache
-/Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/MmaAthletesApi.csproj.CopyComplete
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/MmaAthletesApi.dll
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/ref/MmaAthletesApi.dll
 /Users/johann/Desktop/Webutvikling3/web3-exam/mmaApi/obj/Debug/net5.0/MmaAthletesApi.pdb
