@@ -1,14 +1,21 @@
 import { FC } from "react";
 import { IAthlete } from "../../interfaces/IAthlete";
+import { Card, Button } from "react-bootstrap";
 
 const AthleteItem: FC<IAthlete> = ({ id, name, image }) => {
   return (
-    <article>
-      <h3>
-        {name} {id}
-      </h3>
-      <img src={`https://localhost:5001/images/${image}`} alt={name} />
-    </article>
+    <Card style={{ width: "20rem" }}>
+      <Card.Img
+        variant="top"
+        src={`https://localhost:5001/images/${image}`}
+        alt={name}
+      ></Card.Img>
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>Her kommer det mere info!</Card.Text>
+        <Button variant="primary">Se mer</Button>
+      </Card.Body>
+    </Card>
   );
 };
 
