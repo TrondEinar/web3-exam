@@ -1,7 +1,9 @@
+import "../css/Home.css";
+
 const Home = () => {
   return (
     <header>
-      <h2>Dette er en test (håper det funker!!)</h2>
+      <h2>Plass for bakgrunnsbilde + noe fengende tekst??</h2>
     </header>
   );
 };
