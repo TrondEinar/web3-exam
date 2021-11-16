@@ -9,9 +9,11 @@ const Routing: FC = () => {
   return (
     <BrowserRouter>
       <MainNavigation />
+      <Routes>
+        <Route path="/home" element={<Home />}></Route>
+      </Routes>
       <Container>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
           <Route path="/athletes" element={<AllAthlete />}></Route>
         </Routes>
       </Container>

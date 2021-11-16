@@ -1,14 +1,12 @@
 .navbar {
-  margin: 20px;
+  margin: 0px;
 }
 
 .navbar-brand {
-  color: white !important;
 }
 
 .navbar-brand img {
-  height: 100px;
+  height: 70px;
   /* put value of image height as your need */
   float: left;
-  mix-blend-mode: multiply;
 }
