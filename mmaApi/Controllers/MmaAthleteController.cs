@@ -16,9 +16,49 @@ namespace MmaAthletesApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<MmaAthlete> Get()
+        public ActionResult<List<MmaAthlete>> Get() =>
+        _mmaAthleteService.Get();
+
+        [HttpGet("{id:length(24)}", Name = "GetMmaAthlete")]
+        public ActionResult<MmaAthlete> Get(string id)
         {
-            return _mmaAthleteService.Get();
+            var mmaAthlete = _mmaAthleteService.Get(id);
+
+            if (mmaAthlete == null)
+            {
+                return NotFound();
+            }
+
+            return mmaAthlete;
+        }
+
+        [HttpPost]
+        public ActionResult<MmaAthlete> Create(MmaAthlete mmaAthlete)
+        {
+            _mmaAthleteService.Create(mmaAthlete);
+            return CreatedAtRoute("GetMmaAthlete", new { id = mmaAthlete.Id.ToString(), mmaAthlete});
+        }
+
+        [HttpPut("{id:length(24)}")]
+        public MmaAthlete Update(string id, MmaAthlete mmaAthleteIn)
+        {
+            _mmaAthleteService.Update(id, mmaAthleteIn);
+            return mmaAthleteIn;
+        }
+
+        [HttpDelete("{id:length(24)}")]
+        public IActionResult Delete(string id)
+        {
+            var mmaAthlete = _mmaAthleteService.Get(id);
+
+            if (mmaAthlete == null)
+            {
+                return NotFound();
+            }
+
+            _mmaAthleteService.Remove(mmaAthlete.Id);
+
+            return NoContent();
         }
     }
 }
