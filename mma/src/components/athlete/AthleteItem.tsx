@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { IAthlete } from "../../interfaces/IAthlete";
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const AthleteItem: FC<IAthlete> = ({ id, name, image }) => {
   return (
@@ -13,7 +14,7 @@ const AthleteItem: FC<IAthlete> = ({ id, name, image }) => {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>Her kommer det mere info!</Card.Text>
-        <Button variant="primary">Se mer</Button>
+        <Link to="/athlete"><Button variant="primary">Se mer</Button></Link>
       </Card.Body>
     </Card>
   );

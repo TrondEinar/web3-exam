@@ -4,15 +4,15 @@ import { IAthlete } from "../../interfaces/IAthlete";
 import AthleteInfoItem from "./AthleteInfoItem";
 import { Container, Col, Row } from "react-bootstrap";
 
-const AthleteList: FC = () => {
+const AthleteInfoList: FC = () => {
   const [athletes, setAthletes] = useState<IAthlete[]>();
 
   useEffect(() => {
-    getAllAthletes();
+    getOneAthlete();
   }, []);
 
-  const getAllAthletes = async () => {
-    const result = await athleteService.getAllAthletes();
+  const getOneAthlete = async () => {
+    const result = await athleteService.getOneAthlete();
     setAthletes(result);
   };
 
@@ -35,4 +35,4 @@ const AthleteList: FC = () => {
   );
 };
 
-export default AthleteList;
+export default AthleteInfoList;

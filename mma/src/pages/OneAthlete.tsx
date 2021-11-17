@@ -1,12 +1,10 @@
 import { FC } from "react";
-import AthleteList from "../components/athlete/AthleteList";
 import AthleteInfoList from "../components/athlete/AthleteInfoList";
 
 const OneAthlete: FC = () => {
   return (
     <section>
-      <h3>Alle MMA utøvere</h3>
-      <AthleteList />
+      <h3>Detaljside for utøvere!</h3>
       <AthleteInfoList />
     </section>
   );
