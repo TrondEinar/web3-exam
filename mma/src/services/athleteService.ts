@@ -9,7 +9,13 @@ export const athleteService = (function () {
     return result.data as IAthlete[];
   };
 
+  const getOneAthlete = async () => {
+    const result = await axios.get(UrlToAthleteController);
+    return result.data
+  }
+
   return {
     getAllAthletes,
+    getOneAthlete
   };
 })();
