@@ -9,6 +9,7 @@ const AthleteList: FC = () => {
 
   useEffect(() => {
     getAllAthletes();
+    
   }, []);
 
   const getAllAthletes = async () => {

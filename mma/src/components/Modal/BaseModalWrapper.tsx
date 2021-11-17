@@ -11,13 +11,14 @@ interface BaseModalWrapperProps{
 const BaseModalWrapper: React.FC<BaseModalWrapperProps> = ({onBackdropClick, isModalVisible}) => {
     
     if(!isModalVisible){
-        return null     }
+        return null     
+    }
 
     return(
     
     <Modal onBackdropCLick={onBackdropClick}>
     
-          {ModalItem}
+        
         
     </Modal>);
 }

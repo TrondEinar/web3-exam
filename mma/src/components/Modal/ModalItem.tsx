@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IAthlete } from "../../interfaces/IAthlete";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const ModalItem: FC<IAthlete> = ({ id, name, image }) => {
 
