@@ -1,23 +1,17 @@
-import { FC, useState, useEffect } from "react";
-import { athleteService } from "../../services/athleteService";
+import { FC, useContext} from "react";
 import { IAthlete } from "../../interfaces/IAthlete";
 import AthleteItem from "./AthleteItem";
 import { Container, Col, Row } from "react-bootstrap";
+import { AthleteContext } from "../../contexts/AthleteContext";
+import { AthleteContextType } from "../../types/AthleteContextType";
 
 const AthleteList: FC = () => {
-  const [athletes, setAthletes] = useState<IAthlete[]>();
 
-  useEffect(() => {
-    getAllAthletes();
-  }, []);
+  const {athletes} = useContext(AthleteContext) as AthleteContextType;
 
-  const getAllAthletes = async () => {
-    const result = await athleteService.getAllAthletes();
-    setAthletes(result);
-  };
 
   const createAthleteList = () => {
-    return athletes?.map((athlete: IAthlete, key: number) => {
+    return athletes.map((athlete: IAthlete, key: number) => {
       return (
         <Col key={key}>
           <AthleteItem name={athlete.name} image={athlete.image} />
