@@ -13,7 +13,7 @@ const MainNavigation: FC = () => {
           <img src={logo} alt="logo"></img>
         </Navbar.Brand>
         <Nav>
-          <Nav.Link as={Link} to="/home">
+          <Nav.Link as={Link} to="/">
             Hjem
           </Nav.Link>
           <Nav.Link as={Link} to="/athletes">

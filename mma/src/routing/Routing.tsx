@@ -11,7 +11,7 @@ const Routing: FC = () => {
     <BrowserRouter>
       <MainNavigation />
       <Routes>
-        <Route path="/home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
       </Routes>
       <Container>
         <Routes>
