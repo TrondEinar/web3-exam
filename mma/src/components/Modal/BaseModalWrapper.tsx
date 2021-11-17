@@ -17,8 +17,6 @@ const BaseModalWrapper: React.FC<BaseModalWrapperProps> = ({onBackdropClick, isM
     return(
     
     <Modal onBackdropCLick={onBackdropClick}>
-    
-        
         
     </Modal>);
 }

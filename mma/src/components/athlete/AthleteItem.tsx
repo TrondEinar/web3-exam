@@ -3,7 +3,7 @@ import { IAthlete } from "../../interfaces/IAthlete";
 import { Card, Button } from "react-bootstrap";
 import { useState } from "react"
 import BaseModalWrapper from "../Modal/BaseModalWrapper";
-import AthleteList from "./AthleteList";
+
 
 const AthleteItem: FC<IAthlete> = ({ id, name, image }) => {
 
