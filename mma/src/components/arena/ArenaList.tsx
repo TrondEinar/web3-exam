@@ -12,7 +12,11 @@ const ArenaList: FC = () => {
     return arenas.map((arena: IArena, key: number) => {
       return (
         <Col key={key}>
-          <ArenaItem name={arena.name} image={arena.image} />
+          <ArenaItem
+            name={arena.name}
+            image={arena.image}
+            capacity={arena.capacity}
+          />
         </Col>
       );
     });
