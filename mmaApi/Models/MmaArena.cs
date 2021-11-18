@@ -13,5 +13,7 @@ namespace MmaAthletesApi.Models
         [BsonElement("Name")]
         public string Name {get; set;}
         public string Image {get; set;}
+
+        public string Capacity {get; set;}
     }
 }
