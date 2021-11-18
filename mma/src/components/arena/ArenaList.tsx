@@ -1,19 +1,18 @@
-import { FC, useContext} from "react";
-import { IAthlete } from "../../interfaces/IAthlete";
+import { FC, useContext } from "react";
+import { IArena } from "../../interfaces/IArena";
 import ArenaItem from "./ArenaItem";
 import { Container, Col, Row } from "react-bootstrap";
-import { AthleteContext } from "../../contexts/AthleteContext";
-import { AthleteContextType } from "../../types/AthleteContextType";
+import { ArenaContext } from "../../contexts/ArenaContext";
+import { ArenaContextType } from "../../types/ArenaContextType";
 
 const ArenaList: FC = () => {
-
-  const {athletes} = useContext(AthleteContext) as AthleteContextType;
+  const { arenas } = useContext(ArenaContext) as ArenaContextType;
 
   const createArenaList = () => {
-    return athletes.map((athlete: IAthlete, key: number) => {
+    return arenas.map((arena: IArena, key: number) => {
       return (
         <Col key={key}>
-          <ArenaItem name={athlete.name} image={athlete.image} />
+          <ArenaItem name={arena.name} image={arena.image} />
         </Col>
       );
     });

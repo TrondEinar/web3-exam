@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { IAthlete } from "../../interfaces/IAthlete";
+import { IArena } from "../../interfaces/IArena";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const ArenaItem: FC<IAthlete> = ({ id, name, image }) => {
+const ArenaItem: FC<IArena> = ({ id, name, image }) => {
   return (
     <Card style={{ width: "20rem" }}>
       <Card.Img
@@ -13,6 +13,9 @@ const ArenaItem: FC<IAthlete> = ({ id, name, image }) => {
       ></Card.Img>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
+        <Card.Text>
+          <p>Kapasitet: </p>
+        </Card.Text>
       </Card.Body>
     </Card>
   );

@@ -1,5 +1,5 @@
-import { IAthlete } from "../interfaces/IAthlete";
+import { IArena } from "../interfaces/IArena"
 
 export type ArenaContextType = {
-    arena: IAthlete[]
+    arenas: IArena[]
 }

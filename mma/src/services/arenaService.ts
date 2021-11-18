@@ -1,21 +1,21 @@
 import axios from "axios";
-import { IAthlete } from "../interfaces/IAthlete";
+import { IArena } from "../interfaces/IArena";
 
 export const arenaService = (function () {
-  const UrlToArenaController = "https://localhost:5001/MmaAthlete";
+  const UrlToArenaController = "https://localhost:5001/MmaArena";
 
   const getAllArena = async () => {
     const result = await axios.get(UrlToArenaController);
-    return result.data as IAthlete[];
+    return result.data as IArena[];
   };
 
   const getOneArena = async () => {
     const result = await axios.get(UrlToArenaController);
-    return result.data
-  }
+    return result.data;
+  };
 
   return {
     getAllArena,
-    getOneArena
+    getOneArena,
   };
 })();
