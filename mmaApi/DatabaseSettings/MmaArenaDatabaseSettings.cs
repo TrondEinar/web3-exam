@@ -1,17 +1,15 @@
 namespace MmaAthletesApi.DatabaseSettings
 {
-    public class MmaAthleteDatabaseSettings: IMmaAthleteDatabaseSettings
+    public class MmaArenaDatabaseSettings: IMmaArenaDatabaseSettings
     {
-        public string MmaAthleteCollectionName {get; set;}
-        
+        public string MmaArenaCollectionName {get; set;}
         public string ConnectionString {get; set;}
         public string DatabaseName {get; set;}
     }
-    public interface IMmaAthleteDatabaseSettings
+    public interface IMmaArenaDatabaseSettings
     {
-        string MmaAthleteCollectionName {get; set;}
+        string MmaArenaCollectionName {get; set;}
         string ConnectionString {get; set;}
         string DatabaseName {get; set;}
     }
-
 }
