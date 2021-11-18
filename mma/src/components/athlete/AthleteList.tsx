@@ -14,7 +14,7 @@ const AthleteList: FC = () => {
     return athletes.map((athlete: IAthlete, key: number) => {
       return (
         <Col key={key}>
-          <AthleteItem name={athlete.name} image={athlete.image} />
+          <AthleteItem id={athlete.id} name={athlete.name} image={athlete.image} />
         </Col>
       );
     });

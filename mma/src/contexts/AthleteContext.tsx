@@ -18,6 +18,14 @@ export const AthleteProvider: FC = ({children}) => {
         setAthletes(result)
     }
 
+    useEffect( () => {
+        getAthletesById("id");
+    }, [])
+
+    const getAthletesById = (id: string) => {
+        return athletes.find((athlete) => athlete.id === id) as IAthlete;
+    }
+
     return (
         <AthleteContext.Provider value={ { athletes }}>
             {children}
