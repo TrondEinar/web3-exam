@@ -42,6 +42,19 @@ namespace MmaAthletesApi
 
             services.AddSingleton<MmaAthleteService>();
 
+            //////////////////////////////////////////////
+
+            services.Configure<MmaArenaDatabaseSettings>(
+                Configuration.GetSection(nameof(MmaArenaDatabaseSettings))
+            );
+
+            services.AddSingleton<IMmaArenaDatabaseSettings>(
+                sp => 
+                    sp.GetRequiredService<IOptions<MmaArenaDatabaseSettings>>().Value
+            );
+
+            services.AddSingleton<MmaArenaService>();
+
             services.AddCors(
                 options => {
                     options.AddPolicy("AllowAll", 
