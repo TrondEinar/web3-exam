@@ -5,29 +5,30 @@ import { Link, useParams } from "react-router-dom";
 import { AthleteContext } from "../../contexts/AthleteContext";
 import { AthleteContextType } from "../../types/AthleteContextType";
 import AthleteItem from "./AthleteItem";
+import AthleteList from "./AthleteList";
 
-const AthleteDetails: FC<IAthlete> = ({ name, image }) => {
+const AthleteDetails: FC = () => {
+  const { id } = useParams();
 
-    const {athletes} = useContext(AthleteContext) as AthleteContextType;
+  const { getAthletesById } = useContext(AthleteContext) as AthleteContextType;
+  const [athlete, setAthlete] = useState<IAthlete>();
 
-    const {id} = useParams();
+  useEffect(() => {
+    if (id) {
+      const _athlete = getAthletesById(id);
+      setAthlete(_athlete);
+    }
+  }, []);
 
-    const [athlete, setAthlete] = useState<IAthlete>();
-
-    // useEffect( () => {
-    //     if (id) {
-    //         const _athlete = getAthletesById(id)
-    //         setAthlete(_athlete);
-    //     }
-    // }, [])
-
-    return (
-        <>
-        <div>{id}</div>
-        <div>{name}</div>
-        <div>{image}</div>
-        </>
-    )
+  return (
+    <>
+      <div>{athlete?.name}</div>
+      <img
+        src={`https://localhost:5001/images/${athlete?.image}`}
+        alt={athlete?.image}
+      />
+    </>
+  );
 };
 
 export default AthleteDetails;

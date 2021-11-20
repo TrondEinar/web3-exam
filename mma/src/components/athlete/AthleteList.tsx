@@ -1,4 +1,4 @@
-import { FC, useContext} from "react";
+import { FC, useContext } from "react";
 import { IAthlete } from "../../interfaces/IAthlete";
 import AthleteItem from "./AthleteItem";
 import { Container, Col, Row } from "react-bootstrap";
@@ -6,15 +6,17 @@ import { AthleteContext } from "../../contexts/AthleteContext";
 import { AthleteContextType } from "../../types/AthleteContextType";
 
 const AthleteList: FC = () => {
-
-  const {athletes} = useContext(AthleteContext) as AthleteContextType;
-
+  const { athletes } = useContext(AthleteContext) as AthleteContextType;
 
   const createAthleteList = () => {
     return athletes.map((athlete: IAthlete, key: number) => {
       return (
         <Col key={key}>
-          <AthleteItem id={athlete.id} name={athlete.name} image={athlete.image} />
+          <AthleteItem
+            id={athlete.id}
+            name={athlete.name}
+            image={athlete.image}
+          />
         </Col>
       );
     });

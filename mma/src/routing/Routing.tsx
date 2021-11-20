@@ -18,7 +18,10 @@ const Routing: FC = () => {
           <Route path="/athletes" element={<AllAthlete />}></Route>
         </Routes>
         <Routes>
-        <Route path="/athletes-details/:id" element={<AthleteDetailsPage />}></Route>
+          <Route
+            path="/athletes-details/:id"
+            element={<AthleteDetailsPage />}
+          ></Route>
         </Routes>
       </Container>
     </BrowserRouter>

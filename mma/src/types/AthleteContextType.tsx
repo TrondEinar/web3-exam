@@ -1,5 +1,6 @@
 import { IAthlete } from "../interfaces/IAthlete";
 
 export type AthleteContextType = {
-    athletes: IAthlete[]
-}
+  athletes: IAthlete[];
+  getAthletesById: (id: string) => IAthlete;
+};

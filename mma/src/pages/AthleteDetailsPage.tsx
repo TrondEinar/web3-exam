@@ -5,14 +5,12 @@ import AthleteItem from "../components/athlete/AthleteItem";
 import { IAthlete } from "../interfaces/IAthlete";
 
 const AthleteDetailsPage: FC = () => {
-
   return (
     <section>
       <h3>Detaljside for utøvere!</h3>
-      <AthleteDetails id={""} name={""} image={""} />
+      <AthleteDetails />
     </section>
   );
 };
 
 export default AthleteDetailsPage;
-
