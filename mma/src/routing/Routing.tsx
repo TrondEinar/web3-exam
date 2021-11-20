@@ -5,6 +5,7 @@ import AllAthlete from "../pages/AllAthlete";
 import MainNavigation from "../components/shared/MainNavigation";
 import Home from "../pages/Home";
 import AthleteDetailsPage from "../pages/AthleteDetailsPage";
+import AllArena from "../pages/AllArena";
 
 const Routing: FC = () => {
   return (
@@ -22,6 +23,9 @@ const Routing: FC = () => {
             path="/athletes-details/:id"
             element={<AthleteDetailsPage />}
           ></Route>
+        </Routes>
+        <Routes>
+          <Route path="/arena" element={<AllArena />}></Route>
         </Routes>
       </Container>
     </BrowserRouter>
