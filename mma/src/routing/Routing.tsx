@@ -6,6 +6,7 @@ import OneAthlete from "../pages/OneAthlete";
 import AllArena from "../pages/AllArena";
 import MainNavigation from "../components/shared/MainNavigation";
 import Home from "../pages/Home";
+import AthleteDetailsPage from "../pages/AthleteDetailsPage";
 
 const Routing: FC = () => {
   return (
@@ -17,6 +18,12 @@ const Routing: FC = () => {
       <Container>
         <Routes>
           <Route path="/athletes" element={<AllAthlete />}></Route>
+        </Routes>
+        <Routes>
+          <Route
+            path="/athletes-details/:id"
+            element={<AthleteDetailsPage />}
+          ></Route>
           <Route path="/athlete" element={<OneAthlete />}></Route>
           <Route path="/arena" element={<AllArena />}></Route>
         </Routes>

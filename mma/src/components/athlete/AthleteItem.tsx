@@ -14,7 +14,7 @@ const AthleteItem: FC<IAthlete> = ({ id, name, image }) => {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>Her kommer det mere info!</Card.Text>
-        <Link to="/athlete"><Button variant="primary">Se mer</Button></Link>
+        <Link to={`/athletes-details/${id}`}><Button variant="primary">Les mer om {name}</Button></Link>
       </Card.Body>
     </Card>
   );
