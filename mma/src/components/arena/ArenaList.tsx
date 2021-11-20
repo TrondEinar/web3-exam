@@ -32,3 +32,4 @@ const ArenaList: FC = () => {
 };
 
 export default ArenaList;
+

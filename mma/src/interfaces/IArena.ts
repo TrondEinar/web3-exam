@@ -1,6 +1,6 @@
 export interface IArena {
-  id?: string;
-  name: string;
-  image: string;
-  capacity: string;
-}
+    id?: string;
+    name: string;
+    image: string;
+    capacity: string;
+  }
