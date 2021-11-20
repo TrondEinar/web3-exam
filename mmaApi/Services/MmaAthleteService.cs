@@ -40,4 +40,6 @@ namespace MmaAthletesApi.Services
         public void Remove(string id) =>
         _mmaAthletes.DeleteOne(mmaAthlete => mmaAthlete.Id == id);
     }
+
+    
 }
