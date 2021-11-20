@@ -2,6 +2,8 @@ import { FC } from "react";
 import { Container } from "react-bootstrap";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import AllAthlete from "../pages/AllAthlete";
+import OneAthlete from "../pages/OneAthlete";
+import AllArena from "../pages/AllArena";
 import MainNavigation from "../components/shared/MainNavigation";
 import Home from "../pages/Home";
 import AthleteDetailsPage from "../pages/AthleteDetailsPage";
@@ -22,6 +24,8 @@ const Routing: FC = () => {
             path="/athletes-details/:id"
             element={<AthleteDetailsPage />}
           ></Route>
+          <Route path="/athlete" element={<OneAthlete />}></Route>
+          <Route path="/arena" element={<AllArena />}></Route>
         </Routes>
       </Container>
     </BrowserRouter>
